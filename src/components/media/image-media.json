@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_url_image_medias",
+  "info": {
+    "displayName": "Image",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "webpUrl": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "poster": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Posts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "post"
+    },
+    "upVoteCount": {
+      "type": "biginteger"
+    },
+    "downVoteCount": {
+      "type": "biginteger"
+    },
+    "type": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::topics.topics",
+      "inversedBy": "posts"
+    },
+    "vote": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::vote.vote",
+      "mappedBy": "post"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image-media"
+    },
+    "userInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.user"
+    },
+    "commentsCount": {
+      "type": "integer"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

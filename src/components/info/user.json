@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_info_users",
+  "info": {
+    "displayName": "User",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "avatar": {
+      "type": "string"
+    },
+    "userName": {
+      "type": "string"
+    }
+  }
+}
