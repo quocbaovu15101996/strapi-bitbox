@@ -50,11 +50,6 @@
       "repeatable": false,
       "component": "media.image-media"
     },
-    "userInfo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "info.user"
-    },
     "commentsCount": {
       "type": "integer"
     },
@@ -68,6 +63,12 @@
         "videos",
         "audios"
       ]
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "posts"
     }
   }
 }
