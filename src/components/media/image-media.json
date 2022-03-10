@@ -24,11 +24,6 @@
     },
     "poster": {
       "type": "string"
-    },
-    "userInfo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "info.user"
     }
   }
 }

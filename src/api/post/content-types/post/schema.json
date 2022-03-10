@@ -69,6 +69,11 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "posts"
+    },
+    "userInfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "info.user"
     }
   }
 }
